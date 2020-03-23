@@ -57,7 +57,7 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       background-size: cover;
-      opacity: 9.0;
+      opacity: 1;
       border-radius: 50%;
       border: solid 3px #ad610a; }
   .menu .nav-item {
@@ -90,6 +90,34 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.28s; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(0, -100%, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(0, 100%, 0); }
+  .portrait {
+    background: url(../img/portrait2.jpg);
+    width: 50px;
+    height: 50px; } }
+
+@media screen and (max-width: 500px) {
+  main #home h1, h2 {
+    margin-top: 10vh; } }
 
 * {
   box-sizing: border-box; }
