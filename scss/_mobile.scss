@@ -3,12 +3,18 @@
   .projects{
     grid-template-columns: repeat(4, 1fr);
   }
+  #work-header-resp{
+    padding-bottom: 1.2rem;
+  }
 }
 
 //desktops & laptops
 @include mediaLg{
   .projects{
     grid-template-columns: repeat(3, 1fr);
+  }
+  #work-header-resp{
+    padding-bottom: 1.2rem;
   }
 }
 
@@ -17,6 +23,14 @@
   main{
     align-items: center;
     text-align: center;
+  }
+
+  #last-md{
+    margin-left: 0;
+  }
+
+  #work-header-resp{
+    padding-bottom: 1.2rem;
   }
 
   ul.menu-nav,
@@ -69,5 +83,8 @@
   }
   .projects{
     grid-template-columns: 1fr;
+  }
+  #work-header-resp{
+    padding-bottom: 1.2rem;
   }
 }
