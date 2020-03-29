@@ -115,6 +115,52 @@ main{
 
 }
 
+//work/projects
+.projects{
+  display: grid;
+  grid-gap: 0.4rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img{
+    width: 100%;
+    border: 3px darken($primary-color, 6) solid;
+    
+    &:hover{
+      opacity: 0.5;
+      border-radius: 20px;
+      border-color: $secondary-color;
+      box-shadow: 1px 1px 5px $secondary-color;
+      @include easeIn;
+    }
+  }
+}
+
+//button styles
+.btn{
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover{
+    border-radius: 5px;
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    @include easeIn;
+  }
+}
+
+.btn-dark{
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: rgb(42, 202, 37);
+}
+
+.btn-light{
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: rgb(10, 56, 9);
+}
+
 #main-footer{
   text-align: center;
   padding: 1rem;
