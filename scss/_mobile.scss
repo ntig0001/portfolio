@@ -1,11 +1,9 @@
 //widescreens
 @include mediaXL{
-
 }
 
 //desktops & laptops
 @include mediaLg{
-
 }
 
 //tablets & small laptops
@@ -35,12 +33,22 @@
   .menu-branding{
     height: 25vh;
     transform: translate3d(0, 100%, 0);
+    .portrait{
+      background: url(../img/portrait2.jpg);
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+    }
   }
 
-  .portrait{
-    background: url(../img/portrait2.jpg);
-    width:50px;
-    height: 50px;
+  .about-info{
+    grid-template-areas:
+    'bioimage'
+    'bio'
+    'job1'
+    'job2'
+    'job3';
+    grid-template-columns: 1fr;
   }
 }
 
