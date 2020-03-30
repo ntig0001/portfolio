@@ -293,5 +293,7 @@ main {
     margin-top: 10vh; }
   .projects {
     grid-template-columns: 1fr; }
-  #work-header-resp {
-    padding-bottom: 1.2rem; } }
+  .name-sm {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 4rem; } }
