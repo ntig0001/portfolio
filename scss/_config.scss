@@ -8,6 +8,37 @@ $background-opacity:0.3;
   transition: all 0.5s ease-in;
 }
 
+@mixin responsive{
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 4rem;
+  margin-left: 0;
+  display: grid;
+  justify-content: center;
+  // background-color: blue;
+}
+
+@mixin about{
+    grid-template-areas:
+    'bioimage'
+    'bio'
+    'job1'
+    'job2'
+    'job3';
+    grid-template-columns: 1fr;
+}
+
+@mixin brandMe{
+  height: 25vh;
+    transform: translate3d(0, 100%, 0);
+    .portrait{
+      background: url(../img/portrait2.jpg);
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+    }
+}
+
 @mixin background{
   @if $show-home-image{
     &#bg-img{
@@ -40,21 +71,25 @@ $background-opacity:0.3;
 
 //media Query mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px){
+  @media screen 
+   and (min-width: 0px)
+  and (max-width: 500px){
     @content;
   }
 }
 
 @mixin mediaMd {
   @media screen 
-  //and (min-width: 501px)
+  and (min-width: 501px)
   and (max-width: 768px){
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px){
+  @media screen 
+  and (min-width: 769px) 
+  and (max-width: 1170px){
     @content;
   }
 }

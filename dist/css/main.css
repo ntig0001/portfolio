@@ -246,20 +246,37 @@ main {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
   #work-header-resp {
-    padding-bottom: 1.2rem; } }
+    padding-bottom: 1.2rem; }
+  .gy-resp {
+    margin-bottom: 18px; }
+  .lastOnLg {
+    margin-left: 110px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   #work-header-resp {
-    padding-bottom: 1.2rem; } }
+    padding-bottom: 1.2rem; }
+  .gy-resp {
+    margin-bottom: 18px; }
+  .lastOnLg {
+    margin-left: 110px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center; }
-  #last-md {
-    margin-left: 0; }
+  .gy-resp {
+    padding-bottom: 12px; }
+  .contact-md {
+    padding-bottom: -5px; }
+  .name-resp {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 4rem;
+    margin-left: 0;
+    display: grid;
+    justify-content: center; }
   #work-header-resp {
     padding-bottom: 1.2rem; }
   ul.menu-nav,
@@ -288,12 +305,41 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 500px) {
   main #home h1, h2 {
     margin-top: 10vh; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .work-sm {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(0, -100%, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(0, 100%, 0); }
+    .menu-branding .portrait {
+      background: url(../img/portrait2.jpg);
+      width: 150px;
+      height: 150px;
+      background-size: cover; }
   .projects {
     grid-template-columns: 1fr; }
-  .name-sm {
-    text-align: center;
+  .name-resp {
     margin-bottom: 5px;
-    font-size: 4rem; } }
+    margin-top: 20px;
+    font-size: 4rem;
+    margin-left: 0;
+    display: grid;
+    justify-content: center; } }
