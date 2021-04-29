@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #020109;
+    background: black;
     list-style: none;
     transform: translate3d(-100%, 0, 0);
     transition: all 0.5s ease-in; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #1b0e62;
+    background: #312c22;
     transform: translate3d(100%, 0, 0);
     transition: all 0.5s ease-in; }
     .menu-branding.show {
@@ -95,7 +95,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #1b0e62;
+  background: #312c22;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -113,7 +113,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(27, 14, 98, 0.3); }
+      background: rgba(49, 44, 34, 0.3); }
 
 h1, h2, h3 {
   margin: 0;
@@ -123,7 +123,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(31, 16, 111, 0.5); }
+    background: rgba(58, 52, 40, 0.5); }
 
 .name {
   line-height: 0.8;
@@ -179,12 +179,12 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #211178;
+    background: #403a2c;
     padding: 0.5rem;
     border-right: #ad610a 5px solid; }
     .about-info .job img {
       width: 100%;
-      border: 3px #140a47 solid; }
+      border: 3px #1f1c15 solid; }
       .about-info .job img:hover {
         opacity: 0.5;
         border-radius: 20px;
@@ -198,7 +198,7 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #140a47 solid; }
+    border: 3px #1f1c15 solid; }
     .projects img:hover {
       opacity: 0.5;
       border-radius: 20px;
@@ -241,13 +241,13 @@ main {
   color: #2aca25; }
 
 .btn-light {
-  background: #9282ed;
+  background: #b9ae99;
   color: #0a3809; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #0f0835;
+  background: #13110d;
   color: #fff;
   height: 60px; }
 
