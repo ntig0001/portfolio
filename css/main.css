@@ -47,7 +47,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #083121;
+    background: #15151e;
     transform: translate3d(100%, 0, 0);
     transition: all 0.5s ease-in; }
     .menu-branding.show {
@@ -59,14 +59,14 @@
       background-size: cover;
       opacity: 1;
       border-radius: 50%;
-      border: solid 3px #73a13e; }
+      border: solid 3px #b2b2ff; }
   .menu .nav-item {
     transform: translate3d(-600px, 0, 0);
     transition: all 0.5s ease-in; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #73a13e; }
+      color: #b2b2ff; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-in; }
     .menu .nav-link:hover {
-      color: #73a13e; }
+      color: #b2b2ff; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.07s; }
@@ -95,14 +95,15 @@
   box-sizing: border-box; }
 
 body {
-  background: #083121;
+  background: #15151e;
   color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Verdana, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    opacity: 1;
+    background-image: linear-gradient(to right, #0c0c13 10%, rgba(12, 12, 19, 0.9) 40%, rgba(12, 12, 19, 0.7) 70%, rgba(12, 12, 19, 0) 100%), url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -113,7 +114,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(8, 49, 33, 0.3); }
+      background: rgba(21, 21, 30, 0.3); }
 
 h1, h2, h3 {
   margin: 0;
@@ -123,7 +124,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(10, 62, 42, 0.5); }
+    background: rgba(27, 27, 39, 0.5); }
 
 .name {
   line-height: 0.8;
@@ -145,7 +146,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #73a13e; }
+  color: #b2b2ff; }
 
 main {
   padding: 4rem;
@@ -155,7 +156,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #73a13e;
+        color: #b2b2ff;
         transition: all 0.5s ease-in; }
   main#home {
     overflow: hidden; }
@@ -171,7 +172,7 @@ main {
     height: 250px;
     margin: auto;
     border-radius: 50%;
-    border: #73a13e 3px solid;
+    border: #b2b2ff 3px solid;
     background-size: cover; }
   .about-info .bio {
     grid-area: bio; }
@@ -182,17 +183,17 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #0c4730;
+    background: #20202d;
     padding: 0.5rem;
-    border-right: #73a13e 5px solid; }
+    border-right: #b2b2ff 5px solid; }
     .about-info .job img {
       width: 100%;
-      border: 3px #04170f solid; }
+      border: 3px #08080c solid; }
       .about-info .job img:hover {
         opacity: 0.5;
         border-radius: 20px;
-        border-color: #73a13e;
-        box-shadow: 1px 1px 5px #73a13e;
+        border-color: #b2b2ff;
+        box-shadow: 1px 1px 5px #b2b2ff;
         transition: all 0.5s ease-in; }
 
 .projects {
@@ -201,12 +202,12 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #04170f solid; }
+    border: 3px #08080c solid; }
     .projects img:hover {
       opacity: 0.5;
       border-radius: 20px;
-      border-color: #73a13e;
-      box-shadow: 1px 1px 5px #73a13e;
+      border-color: #b2b2ff;
+      box-shadow: 1px 1px 5px #b2b2ff;
       transition: all 0.5s ease-in; }
 
 .boxes {
@@ -223,7 +224,7 @@ main {
     transition: all 0.5s ease-in; }
     .boxes div:hover {
       padding: 1rem 2rem;
-      background: #73a13e;
+      background: #b2b2ff;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -235,7 +236,7 @@ main {
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     border-radius: 5px;
-    background: #73a13e;
+    background: #b2b2ff;
     color: #000;
     transition: all 0.5s ease-in; }
 
@@ -244,13 +245,13 @@ main {
   color: #2aca25; }
 
 .btn-light {
-  background: #55e3ac;
+  background: #8787ab;
   color: #0a3809; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #010503;
+  background: black;
   color: #fff;
   height: 60px; }
 
