@@ -1,5 +1,5 @@
-$primary-color:#083121;
-$secondary-color: #73a13e;
+$primary-color:#15151e;
+$secondary-color: #b2b2ff;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity:0.3;
@@ -41,7 +41,13 @@ $background-opacity:0.3;
 @mixin background{
   @if $show-home-image{
     &#bg-img{
-      background: $home-image;
+      opacity: 1;
+      background-image: linear-gradient(to right,
+      rgba(12,12,19,1) 10%,
+      rgba(12,12,19,.9) 40%,
+      rgba(12,12,19,.7) 70%,
+      rgba(12,12,19,0) 100%
+      ), $home-image;
       background-attachment: fixed;
       background-size: cover;
       &:after {
