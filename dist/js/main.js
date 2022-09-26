@@ -8,9 +8,7 @@ const navItems = document.querySelectorAll('.nav-item');
 //set initial state of Menu
 let showMenu = false;
 
-menuBtn.addEventListener('click', toggleMenu);
-
-function toggleMenu(){
+const toggleMenu = () =>{
   if(!showMenu){
     menuBtn.classList.add('close');
     menu.classList.add('show');
@@ -30,4 +28,15 @@ function toggleMenu(){
     //reset menu state
     showMenu = false;
   }
+}
+
+menuBtn.addEventListener('click', toggleMenu);
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+            .register('cached_assets.js')
+            .then(reg => console.log('Service Worker: Registered'))
+            .catch(err => console.log(`An Error Occurred: ${err}`));
+  })
 }
