@@ -9,8 +9,7 @@
   },
   "author": "Elysé Ntigirishari",
   "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^2.2.0",
-    "node-sass": "^8.0.0"
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
